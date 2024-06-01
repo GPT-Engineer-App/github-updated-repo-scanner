@@ -63,7 +63,7 @@ const Index = () => {
           <Spinner size="xl" />
         ) : (
           <List spacing={3} width="100%">
-            {repos.map((repo) => (
+            {repos.slice(0, 10).map((repo) => (
               <ListItem key={repo.id} p={4} borderWidth={1} borderRadius="md">
                 <Text fontSize="xl" fontWeight="bold">
                   {repo.name}
